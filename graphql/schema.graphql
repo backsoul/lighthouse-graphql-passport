@@ -37,12 +37,6 @@ type Query {
     user(id: ID @eq): User @find
     posts: [Post!]! @all
     post(id: Int! @eq): Post @find
-    lastetPost: Post!  @field(resolver: "Post@lastetPost")
-}
-type Mutation {
-    createUser(
-        name: String! @rules(apply: ["string", "max:30"]),
-        email: String! @rules(apply: ["email", "unique:users"]),
-        password: String! @rules(apply: ["min:4"]) @hash
-    ): User! @create
+    lastetPost: Post! @field(resolver: "Post@lastetPost")
+    me: User  @auth
 }

@@ -12,7 +12,9 @@
         "fideloper/proxy": "^4",
         "fruitcake/laravel-cors": "^2",
         "guzzlehttp/guzzle": "^7",
+        "joselfonseca/lighthouse-graphql-passport-auth": "^6.0",
         "laravel/framework": "^8",
+        "laravel/passport": "^10.1",
         "laravel/tinker": "^2",
         "mll-lab/laravel-graphql-playground": "^2.5",
         "nuwave/lighthouse": "^5"
